@@ -49,7 +49,7 @@ const url =  import.meta.env.VITE_API_URL
 // const token = JSON.parse(localStorage.getItem("chat-user"))
   useEffect(() => {
     if (authUser) {
-        const socket = io('http://localhost:8000', {
+        const socket = io('https://app-chat-backend-x4yo.onrender.com', {
           query: {
             userId: authUser.id,
           }
