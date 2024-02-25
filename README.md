@@ -1,8 +1,14 @@
-# React + Vite
+#AppChat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Real-time online chat
+Check out the live demo [here](https://app-chat-frontend-sn5q.onrender.com).
 
-Currently, two official plugins are available:
+#mern stack 
+- react.js
+- tailwind
+- daisyui
+- socket.io
+- express.js
+- mongoose
+- mongodb
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
