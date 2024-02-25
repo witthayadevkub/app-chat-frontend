@@ -45,11 +45,11 @@ export const SocketContextProvider = ({ children }) => {
   const [online, setOnline] = useState([])
   const { authUser, currentUser } = useAuthContext()
   const [snake, setSnake] = useState(false)
-
+const url =  import.meta.env.VITE_API_URL
 // const token = JSON.parse(localStorage.getItem("chat-user"))
   useEffect(() => {
     if (authUser) {
-        const socket = io('http://localhost:5000', {
+        const socket = io('http://localhost:8000', {
           query: {
             userId: authUser.id,
           }

@@ -33,10 +33,10 @@ const MessageContainer = () => {
       if (newMessage) {
         setSnake(true)
       }
-
+   sound()
       // const sound = new Audio(alertsound);
       // sound.play();
-      sound()
+   
       // console.log(newMessage)
       setmessage([...message, newMessage]);
 
