@@ -28,9 +28,9 @@ const Login = () => {
                 navigate('/')
                 window.location.reload()
             }
-            
-                setLoading(false)
-         
+
+            setLoading(false)
+
         } catch (err) {
             console.log(err);
         }
@@ -50,10 +50,11 @@ const Login = () => {
         }
     }
 
-    
+
 
     return (
-        <form onSubmit={handleSubmit} className='relative max-w-[400px] shadow bg-white p-4 flex flex-col gap-2 m-[0_auto] rounded-lg '>
+        <div className="bg-white shadow p-4 grid gap-2">
+          <form onSubmit={handleSubmit} className='relative max-w-[400px]   flex flex-col gap-2 m-[0_auto] rounded-lg '>
             <div className="">
                 <h2 className='text-xl font-bold text-center'>LogIn</h2>
                 {loading && <span className="loading loading-dots loading-lg"></span>}
@@ -74,10 +75,13 @@ const Login = () => {
             <Link to='/signup' className="underline hover:btn-link text-sm">Go Signup</Link>
             <div className="flex gap-1">
                 <button type='submit' className="flex-1 btn btn-outline btn-accent">Login</button>
-                <button onClick={handleGuest} className=" btn btn-outline btn-accent">Guest</button>
-            </div>
 
+            </div>
+            
         </form>
+        <button onClick={handleGuest} className="w-full btn btn-outline btn-accent">Guest</button>
+        </div>
+      
     )
 }
 
